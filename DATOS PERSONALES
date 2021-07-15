@@ -1,1 +1,69 @@
-
+#include<iostream>
+#include<stdlib.h>
+#include<string>
+#include <fstream>
+using namespace std;
+class Persona{
+	private:
+		string cedula,apellidos,nombres;
+		int fn[3],estatura,peso;
+		public:
+			Persona(string c,string a,string n,int e,int p)
+			{
+				cedula=c;
+				apellidos=a;
+				nombres=n;
+				estatura=e;
+				peso=p;
+			}
+			void set_nombres(string n){ nombres=n;	}
+			void set_apellidos(string a){ apellidos=a;	}
+			void set_cedula(string c){ cedula=c;	}
+			void set_estatura(int e){ estatura=e;	}
+			void set_peso(int p){ peso=p;	}
+			void ingresar ()
+			{
+			cout<<"*****************************************************"<<endl<<endl;	
+			cout<<"               INGRESE SUS DATOS PERSONALES          "<<endl<<endl;
+			cout<<"*****************************************************"<<endl<<endl;
+			
+			cout<<"\nINGRESE SUS NOMBRES:\n "; getline(cin,nombres);
+			
+			cout<<"\nINGRESE SUS APELLIDOS: \n "; getline(cin,apellidos);
+		
+			cout<<"\nINGRESE N DE CEDULA:\n "; getline(cin,cedula);
+		
+			cout<<"\nINGRESE LA ESTATURA:\n "; cin>>estatura;
+		
+			cout<<"\n INFGRESE EL PESO:\n ";  cin>>peso;
+			
+			}
+			void mostrar()
+			{
+			 cout<<" NOMBRES" <<" \t ";
+			 cout<<"  APELLIDOS  "<<" \t ";
+			 cout<<" CEDULA " <<" \t ";
+			 cout<<"  ESTATURA" <<" \t ";
+			 cout<<"  PESO  " <<endl;
+			 
+			 cout<<nombres<<" \t ";
+			 cout<<apellidos<<" \t ";
+			 cout<<cedula<<" \t ";
+			 cout<<estatura<<" \t ";
+			 cout<<peso<<"\t";
+			 
+			}
+};
+int main()
+{
+int edad,actual,nacimiento;
+int np,ed,n;
+string cedula,apellidos,nombres;
+		float estatura,peso,IMC;
+	Persona P1(cedula,apellidos,nombres,estatura,peso);
+	P1.ingresar();
+	P1.mostrar();
+	cout<<"\n";
+  cin.get();
+	return 0;
+}
