@@ -1,1 +1,14 @@
 
+//***************************************
+//Jama Patricia 
+//***************************************
+cout<<"*****************************************************"<<endl<<endl;
+cout<<"         CALCULAR LA EDAD DE LA PERSONA              "<<endl<<endl;
+cout<<"*****************************************************"<<endl<<endl;
+cout<<"\nINGRESE AÑO ACTUAL:\n";
+	cin>>actual;
+cout<<"\nINGRESE EL AÑO DE NACIMIENTO DE LA PERSONA:\n";
+	cin>>nacimiento;
+	edad=actual-nacimiento;
+cout<<"\n  LA PERSONA TIENE  \n" << edad << " AÑOS " ;
+cout<<endl;
