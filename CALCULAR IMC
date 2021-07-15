@@ -1,1 +1,31 @@
 
+cout<<"*******************"<<endl<<endl;
+cout<<"    CALCULAR IMC   "<<endl<<endl;
+cout<<"*******************"<<endl<<endl;
+cout<<endl	;
+cout<<"\n\nINGRESE SU ESTATURA EN (CM):";
+	  cin>>estatura;
+cout<<"\n\nINGRESE SU PESO EN (KG):";
+    	cin>>peso;
+cout<<endl <<endl;
+     	IMC = peso/(estatura*estatura);
+    	
+cout<<"Tu indice de masa corporal es: "<<IMC;
+cout<<endl <<endl; 
+    	 
+    	 
+    if (IMC<=20)
+cout<<"Peligro, estas bajo de peso";
+	} 
+     if (20<IMC&&IMC<=25)	cout<<"Felicidades estas en tu peso";
+	 }     
+    if (25<IMC&&IMC<30){
+cout<<"Tienes sobrepeso"; 
+	}  
+    if (30<IMC&&IMC<35){
+cout<<"tienes obesidad"; 
+	}
+      
+    if (35<=IMC){
+cout<<"Tienes obesidad morbida"; 
+	}
